@@ -2,7 +2,7 @@
 create
 or replace table domaine (
     domain VARCHAR NOT NULL,
-    marque_nom  VARCHAR NOT NULL UNIQUE,
+    marque_nom  VARCHAR UNIQUE,-- NULL quand pas de marque associée (domaine réservé)
     marque_description VARCHAR NOT NULL,
     url VARCHAR
 
